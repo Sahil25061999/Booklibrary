@@ -1,0 +1,41 @@
+:root {
+  --header-text-size: 2rem;
+  --header-text-weight: bold;
+  --header-link-weight: 300;
+}
+
+.header-title {
+  text-decoration: none;
+  color: var(--color-text-light);
+  font-size: var(--header-text-size);
+  font-weight: var(--header-text-weight);
+}
+
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.header-link {
+  list-style: none;
+}
+
+.header-link a {
+  text-decoration: none;
+  padding: 1rem;
+  color: var(--color-text-light);
+  font-weight: var(--header-link-weight);
+}
+
+.header-link a:hover,
+.header-title:hover {
+  color: white;
+}

@@ -12,10 +12,12 @@
       href="https://unpkg.com/filepond/dist/filepond.css"
       rel="stylesheet"
     />
+
     <link
       href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/stylesheets/main.css" />
     <script
       defer
       src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"
@@ -36,10 +38,12 @@
     <title>BookLibrary</title>
   </head>
   <body>
-    <%- include('../partials/header.ejs') %>
-    <br />
-    <%- include('../partials/error.ejs')%>
-    <br />
-    <%- body %>
+    <div class="container">
+      <%- include('../partials/header.ejs') %>
+
+      <div class="inner_container">
+        <%- include('../partials/error.ejs')%> <%- body %>
+      </div>
+    </div>
   </body>
 </html>
